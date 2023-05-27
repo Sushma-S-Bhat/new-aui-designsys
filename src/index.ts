@@ -1,3 +1,2 @@
-import MyCounter from './components/App'
-
-export { MyCounter }
+import { AuiButton } from './components/Button/Button'
+export { AuiButton }
