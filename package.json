@@ -7,7 +7,7 @@
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sushma-S-Bhat/new-aui-designsys.git"
+    "url": "git+https://github.com/Sushma-S-Bhat/new-aui-designsys.git"
   },
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
@@ -17,7 +17,10 @@
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_afd71595c635a49"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -32,31 +35,62 @@
     "typescript",
     "awesome-project"
   ],
-  "author": "Igor Gaponov (gapon2401)",
+  "author": {
+    "name": "Igor Gaponov",
+    "url": "gapon2401"
+  },
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@storybook/addon-essentials": "7.0.18",
+    "@storybook/addon-interactions": "7.0.18",
+    "@storybook/addon-links": "7.0.18",
+    "@storybook/blocks": "7.0.18",
+    "@storybook/react": "7.0.18",
+    "@storybook/react-webpack5": "7.0.18",
+    "@storybook/testing-library": "0.0.14-next.2",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.1",
     "@types/react": "^18.0.12",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
+    "chromatic": "^6.17.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "jest": "^28.1.1",
     "jest-canvas-mock": "^2.4.0",
     "jest-environment-jsdom": "^28.1.1",
     "prettier": "^2.6.2",
+    "prop-types": "15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "storybook": "7.0.18",
     "ts-jest": "^28.0.4",
     "typescript": "^4.7.3"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "github:semantic-release/release-notes-generator"
-  }
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/Sushma-S-Bhat/new-aui-designsys/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/Sushma-S-Bhat/new-aui-designsys#readme",
+  "_id": "my-react-mui-sb-ts-aui@1.0.0"
 }
