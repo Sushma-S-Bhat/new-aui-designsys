@@ -17,6 +17,7 @@
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
+    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint",
     "chromatic": "npx chromatic --project-token=chpt_97ef4ea26a6438a"

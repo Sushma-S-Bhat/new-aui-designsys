@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import AuiButton from './ButtonNew'
+import AuiButtonNew from './ButtonNew'
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta: Meta<typeof AuiButton> = {
-  title: 'Example/Button',
-  component: AuiButton,
+const meta: Meta<typeof AuiButtonNew> = {
+  title: 'Example/ButtonNew',
+  component: AuiButtonNew,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 }
 
 export default meta
-type Story = StoryObj<typeof AuiButton>
+type Story = StoryObj<typeof AuiButtonNew>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 export const Primary: Story = {
