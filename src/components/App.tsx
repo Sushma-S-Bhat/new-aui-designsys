@@ -1,2 +1,2 @@
-import { AuiButton }  from './Button/Button'
+import { AuiButton } from './Button/Button'
 export default AuiButton
