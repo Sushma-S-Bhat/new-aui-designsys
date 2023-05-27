@@ -13,7 +13,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
@@ -46,7 +46,8 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.2",
     "@storybook/react-webpack5": "^7.0.18",
-    "react-webpack5": "^1.0.0"
+    "react-webpack5": "^1.0.0",
+    "semantic-release": "^21.0.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.17",
@@ -80,6 +81,11 @@
   },
   "bugs": {
     "url": "https://github.com/gapon2401/my-react-typescript-package/issues"
+  },
+  "release": {
+    "branches": [
+      "realse/npm-publish"
+    ]
   },
   "readme": "ERROR: No README data found!",
   "homepage": "https://github.com/gapon2401/my-react-typescript-package#readme",

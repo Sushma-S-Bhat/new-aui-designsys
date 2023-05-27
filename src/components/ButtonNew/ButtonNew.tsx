@@ -22,7 +22,12 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export default function AuiButtonNew({ label, variant='contained', size }: ButtonProps) {
+export default function AuiButtonNew({ label, variant = 'contained', size }: ButtonProps) {
   // const mode = variant ? 'storybook-button--variant' : 'storybook-button--secondary'
-  return <Button variant={variant} size={size} > {label} </Button>
+  return (
+    <Button variant={variant} size={size}>
+      {' '}
+      {label}{' '}
+    </Button>
+  )
 }
