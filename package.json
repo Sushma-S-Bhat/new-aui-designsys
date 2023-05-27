@@ -10,14 +10,16 @@
     "url": "git+https://github.com/gapon2401/my-react-typescript-package.git"
   },
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "chromatic": "npx chromatic --project-token=chpt_97ef4ea26a6438a"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -32,26 +34,53 @@
     "typescript",
     "awesome-project"
   ],
-  "author": "Igor Gaponov (gapon2401)",
+  "author": {
+    "name": "Igor Gaponov",
+    "url": "gapon2401"
+  },
   "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.2",
+    "@storybook/react-webpack5": "^7.0.18",
+    "react-webpack5": "^1.0.0"
+  },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.17",
+    "@storybook/addon-interactions": "^7.0.17",
+    "@storybook/addon-links": "^7.0.17",
+    "@storybook/blocks": "^7.0.17",
+    "@storybook/nextjs": "^7.0.17",
+    "@storybook/react": "^7.0.17",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.1",
     "@types/react": "^18.0.12",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
+    "chromatic": "^6.17.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "jest": "^28.1.1",
     "jest-canvas-mock": "^2.4.0",
     "jest-environment-jsdom": "^28.1.1",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "storybook": "^7.0.17",
     "ts-jest": "^28.0.4",
     "typescript": "^4.7.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/gapon2401/my-react-typescript-package/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/gapon2401/my-react-typescript-package#readme",
+  "_id": "my-react-typescript-package-aui@1.0.0"
 }
