@@ -1,0 +1,10 @@
+{
+    "githubToken": "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",
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/npm",
+        "@semantic-release/git"
+      ],
+    "branches": ["master"]
+  }
