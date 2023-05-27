@@ -7,7 +7,7 @@
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gapon2401/my-react-typescript-package.git"
+    "url": "https://github.com/gapon2401/my-react-typescript-package.git"
   },
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
@@ -82,11 +82,8 @@
   "bugs": {
     "url": "https://github.com/gapon2401/my-react-typescript-package/issues"
   },
-  "release": {
-    "branches": [
-      "realse/npm-publish"
-    ]
-  },
+  "plugins":["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/npm", "@semantic-release/github"],
+
   "readme": "ERROR: No README data found!",
   "homepage": "https://github.com/gapon2401/my-react-typescript-package#readme",
   "_id": "my-react-typescript-package-aui@1.0.0"
