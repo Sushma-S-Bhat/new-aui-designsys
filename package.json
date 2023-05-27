@@ -1,5 +1,5 @@
 {
-  "name": "my-react-typescript-package",
+  "name": "my-react-mui-sb-ts-aui",
   "version": "1.0.0",
   "description": "My first react typescript package",
   "main": "./dist/cjs/index.js",
