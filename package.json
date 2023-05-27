@@ -1,6 +1,6 @@
 {
   "name": "my-react-mui-sb-ts-aui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My first react typescript package",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
