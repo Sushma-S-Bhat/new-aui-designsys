@@ -48,6 +48,13 @@ export const Medium: Story = {
     label: 'Button',
   },
 }
+export const MediumOutlined: Story = {
+  args: {
+    size: 'medium',
+    variant:'outlined',
+    label: 'Button',
+  },
+}
 export const Small: Story = {
   args: {
     size: 'small',
