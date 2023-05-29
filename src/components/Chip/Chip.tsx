@@ -9,7 +9,7 @@ interface ButtonProps {
   /**
    * Button contents
    */
-  color?: 'success' | 'error' | 'default'
+  //color?: 'success' | 'error' | 'default'
   label: string
   /**
    * Optional click handler
@@ -22,7 +22,7 @@ interface ButtonProps {
 export const AuiChip = ({
   variant = 'filled',
   size = 'small',
-  color = 'default',
+  //color = 'default',
   label = 'chip',
   ...props
 }: ButtonProps) => {
@@ -31,7 +31,7 @@ export const AuiChip = ({
       variant={variant}
       size={size}
       {...props}
-      color={color}
+      //color={color}
       label={label}
     > 
     </Chip>

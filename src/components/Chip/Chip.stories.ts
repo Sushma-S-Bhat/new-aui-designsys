@@ -18,7 +18,8 @@ type Story = StoryObj<typeof AuiChip>
 export const Primary: Story = {
   // More on args: https://storybook.js.org/docs/react/writing-stories/args
   args: {
-    color: 'default',
+    variant: 'filled',
+    // color: 'default',
   },
 }
 
@@ -27,17 +28,17 @@ export const Outlined: Story = {
     variant: 'outlined',
   },
 }
-export const Success: Story = {
-  args: {
-    color: 'success',
-  },
-}
+// export const Success: Story = {
+//   args: {
+//     color: 'success',
+//   },
+// }
 
-export const Failure: Story = {
-  args: {
-    color: 'error',
-  },
-}
+// export const Failure: Story = {
+//   args: {
+//     color: 'error',
+//   },
+// }
 export const Big: Story = {
   args: {
     size: 'medium',
