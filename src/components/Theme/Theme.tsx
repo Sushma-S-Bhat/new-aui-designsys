@@ -209,7 +209,6 @@ export const Auitheme = createTheme({
       md: 960,
       lg: 1280,
       xl: 1536,
-      xxl: 1920,
     },
   },
   palette: {
@@ -253,7 +252,7 @@ export const Auitheme = createTheme({
       primary: auiPalette.grey[800], // Zendesk Garden grey 800
       secondary: auiPalette.grey[600], // Zendesk Garden grey 600
       disabled: auiPalette.grey[400], // Zendesk Garden grey 400
-      hint: auiPalette.grey[400], // Zendesk Garden grey 400
+    // hint: auiPalette.grey[400], // Zendesk Garden grey 400
     },
     border: {
       main: auiPalette.grey[300],
@@ -383,55 +382,55 @@ export const Auitheme = createTheme({
   components: {
     MuiButton: {
       variants: [
-        {
-          props: { variant: 'save' },
-          style: {
-            fontSize: '0.875rem',
-            fontWeight: 500,
-            color: auiPalette.grey[100],
-            background: auiPalette.green[600],
-            textTransform: 'none',
-            borderRadius: 100,
-            '&:hover': {
-              background: auiPalette.green[500],
-              color: auiPalette.grey[300],
+        // {
+        //   props: { variant: 'save' },
+        //   style: {
+        //     fontSize: '0.875rem',
+        //     fontWeight: 500,
+        //     color: auiPalette.grey[100],
+        //     background: auiPalette.green[600],
+        //     textTransform: 'none',
+        //     borderRadius: 100,
+        //     '&:hover': {
+        //       background: auiPalette.green[500],
+        //       color: auiPalette.grey[300],
 
-              transition: '0.9s',
-            },
-          },
-        },
-        {
-          props: { variant: 'start' },
-          style: {
-            fontSize: '0.875rem',
-            fontWeight: 500,
-            color: auiPalette.grey[100],
-            background: auiPalette.kale[600],
-            textTransform: 'none',
-            borderRadius: 100,
-            '&:hover': {
-              background: auiPalette.kale[600],
-              color: auiPalette.grey[300],
-              transition: '0.5s',
-            },
-          },
-        },
-        {
-          props: { variant: 'create' },
-          style: {
-            fontSize: '0.875rem',
-            fontWeight: 500,
-            color: auiPalette.grey[100],
-            background: auiPalette.blue[600],
-            textTransform: 'none',
-            borderRadius: 100,
-            '&:hover': {
-              background: auiPalette.blue[500],
-              color: auiPalette.grey[300],
-              transition: '0.5s',
-            },
-          },
-        },
+        //       transition: '0.9s',
+        //     },
+        //   },
+        // },
+        // {
+        //   props: { variant: 'start' },
+        //   style: {
+        //     fontSize: '0.875rem',
+        //     fontWeight: 500,
+        //     color: auiPalette.grey[100],
+        //     background: auiPalette.kale[600],
+        //     textTransform: 'none',
+        //     borderRadius: 100,
+        //     '&:hover': {
+        //       background: auiPalette.kale[600],
+        //       color: auiPalette.grey[300],
+        //       transition: '0.5s',
+        //     },
+        //   },
+        // },
+        // {
+        //   props: { variant: 'create' },
+        //   style: {
+        //     fontSize: '0.875rem',
+        //     fontWeight: 500,
+        //     color: auiPalette.grey[100],
+        //     background: auiPalette.blue[600],
+        //     textTransform: 'none',
+        //     borderRadius: 100,
+        //     '&:hover': {
+        //       background: auiPalette.blue[500],
+        //       color: auiPalette.grey[300],
+        //       transition: '0.5s',
+        //     },
+        //   },
+        // },
         {
           props: { variant: 'contained' },
           style: {
@@ -471,7 +470,7 @@ export const Auitheme = createTheme({
             color: auiPalette.grey[800],
             fontSize: '0.875rem',
             fontWeight: 500,
-            background: 'trasnparent',
+            background: 'transparent',
             textTransform: 'none',
             borderRadius: 100,
             borderColor: auiPalette.grey[300],
