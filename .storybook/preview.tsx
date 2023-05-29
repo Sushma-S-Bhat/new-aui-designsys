@@ -1,5 +1,7 @@
 import type { Preview } from '@storybook/react'
-import Theme from '../src/components/Theme/Theme'
+import { ThemeProvider } from '@mui/material/styles';
+import {Auitheme} from '../src/components/Theme/Theme'
+
 
 const preview: Preview = {
   parameters: {
@@ -13,9 +15,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <Theme>
+      <ThemeProvider theme={Auitheme}>
         <Story />
-      </Theme>
+      </ThemeProvider>
     ),
   ],
 }
