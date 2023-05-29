@@ -241,45 +241,45 @@ export const Auitheme = createTheme({
       main: auiPalette.green[400],
       contrastText: auiPalette.white[700], // white
     },
-    background: {
-      primary: auiPalette.white[700],
-      secondary: auiPalette.grey[100],
-      default: auiPalette.grey[100], // Zendesk Garden grey 100
-      paper: auiPalette.white[700], // white
-      kale: auiPalette.main[200],
-    },
+    // background: {
+    //   primary: auiPalette.white[700],
+    //   secondary: auiPalette.grey[100],
+    //   default: auiPalette.grey[100], // Zendesk Garden grey 100
+    //   paper: auiPalette.white[700], // white
+    //   kale: auiPalette.main[200],
+    // },
     text: {
       primary: auiPalette.grey[800], // Zendesk Garden grey 800
       secondary: auiPalette.grey[600], // Zendesk Garden grey 600
       disabled: auiPalette.grey[400], // Zendesk Garden grey 400
     // hint: auiPalette.grey[400], // Zendesk Garden grey 400
     },
-    border: {
-      main: auiPalette.grey[300],
-    },
-    bordercolor: {
-      main: auiPalette.blue[500],
-    },
-    iconhovercolor: {
-      main: auiPalette.grey[300],
-    },
-    nav: {
-      activetext: auiPalette.white[700],
-      text: auiPalette.white[100],
-      background: auiPalette.black[100],
-    },
-    card: {
-      main: {
-        border: auiPalette.grey[300],
-        background: auiPalette.white[700],
-        hover: {
-          background: auiPalette.main[200],
-          border: auiPalette.main[300],
-          buttonbackground: auiPalette.main[600],
-          buttontext: auiPalette.white[700],
-        },
-      },
-    },
+    // border: {
+    //   main: auiPalette.grey[300],
+    // },
+    // bordercolor: {
+    //   main: auiPalette.blue[500],
+    // },
+    // iconhovercolor: {
+    //   main: auiPalette.grey[300],
+    // },
+    // nav: {
+    //   activetext: auiPalette.white[700],
+    //   text: auiPalette.white[100],
+    //   background: auiPalette.black[100],
+    // },
+    // card: {
+    //   main: {
+    //     border: auiPalette.grey[300],
+    //     background: auiPalette.white[700],
+    //     hover: {
+    //       background: auiPalette.main[200],
+    //       border: auiPalette.main[300],
+    //       buttonbackground: auiPalette.main[600],
+    //       buttontext: auiPalette.white[700],
+    //     },
+    //   },
+    // },
   },
   typography: {
     fontFamily: 'SF Pro, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif',
