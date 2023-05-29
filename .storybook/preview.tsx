@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react'
-//import Theme from '../src/components/Theme/Theme'
+import Theme from '../src/components/Theme/Theme'
 
 const preview: Preview = {
   parameters: {
@@ -11,13 +11,13 @@ const preview: Preview = {
       },
     },
   },
-  // decorators: [
-  //   (Story) => (
-  //     <Theme>
-  //       <Story />
-  //     </Theme>
-  //   ),
-  // ],
+  decorators: [
+    (Story) => (
+      <Theme>
+        <Story />
+      </Theme>
+    ),
+  ],
 }
 
 export default preview
