@@ -328,14 +328,6 @@ export const Auitheme = createTheme({
       letterSpacing: '0.0075em',
       color: auiPalette.yellow[800], // Zendesk Garden grey 800
     },
-    subtitle: {
-      fontFamily: 'DM Sans',
-      fontWeight: 700,
-      fontSize: '1.5rem',
-      lineHeight: '1.5rem',
-      letterSpacing: '0.00938em',
-      color: auiPalette.yellow[800], // Zendesk Garden grey 800
-    },
     subtitle1: {
       fontWeight: 600,
       fontSize: '1rem',
@@ -364,28 +356,6 @@ export const Auitheme = createTheme({
       letterSpacing: '0.00735em',
       color: auiPalette.grey[600], // Zendesk Garden grey 600
     },
-    body3: {
-      fontWeight: 400,
-      fontSize: '0.75rem',
-      lineHeight: '1rem',
-      letterSpacing: '0.01071em',
-      color: auiPalette.grey[500], // Zendesk Garden grey 600
-    },
-    body4: {
-      fontWeight: 600,
-      fontSize: '2.5rem',
-      lineHeight: '1rem',
-      letterSpacing: '0.01071em',
-    },
-    body5: {
-      fontFamily: 'DM Sans',
-      fontWeight: 700,
-      fontSize: '2rem',
-      lineHeight: '2.15rem',
-      letterSpacing: '-0.01562em',
-      color: auiPalette.grey[800], // Zendesk Garden grey 800
-    },
-
     button: {
       fontWeight: 600,
       fontSize: '0.875rem',
