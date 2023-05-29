@@ -1,2 +1,3 @@
 import { AuiButton } from './components/Button/Button'
-export { AuiButton }
+import { AuiTypography } from './components/Typography/Typography'
+export { AuiButton, AuiTypography }
