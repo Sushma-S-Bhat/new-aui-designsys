@@ -1,2 +1,3 @@
 import { AuiButton } from './components/Button/Button'
-export { AuiButton }
+import { AuiChip } from './components/Chip/Chip'
+export { AuiButton, AuiChip }
