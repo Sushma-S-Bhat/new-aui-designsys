@@ -9,7 +9,7 @@ interface ButtonProps {
   /**
    * Button contents
    */
-  color: string
+  color?: 'success' | 'error' | 'default'
   label: string
   /**
    * Optional click handler
@@ -20,10 +20,10 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const AuiChip = ({
-  variant = "filled",
+  variant = 'filled',
   size = 'small',
   color = 'default',
-  label = "chip",
+  label = 'chip',
   ...props
 }: ButtonProps) => {
   return (
