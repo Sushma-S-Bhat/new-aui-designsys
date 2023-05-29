@@ -7,6 +7,6 @@ import { AuiButton } from '../src'
 
 describe('Common render', () => {
   it('renders without crashing', () => {
-    render(<AuiButton label='button' />)
+    render(<AuiButton />)
   })
 })

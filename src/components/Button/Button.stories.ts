@@ -19,45 +19,41 @@ export const Primary: Story = {
   // More on args: https://storybook.js.org/docs/react/writing-stories/args
   args: {
     variant: 'contained',
-    label: 'Button',
+    children: 'Button',
   },
 }
 
 export const Outlined: Story = {
   args: {
     variant: 'outlined',
-    label: 'Button',
+    children: 'Button',
   },
 }
 export const Text: Story = {
   args: {
     variant: 'text',
-    label: 'Button',
+    children: 'Button',
   },
 }
 
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
+    variant: 'contained',
+    children: 'Button',
   },
 }
 export const Medium: Story = {
   args: {
     size: 'medium',
-    label: 'Button',
-  },
-}
-export const MediumOutlined: Story = {
-  args: {
-    size: 'medium',
-    variant: 'outlined',
-    label: 'Button',
+    variant: 'contained',
+    children: 'Button',
   },
 }
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
+    variant: 'contained',
+    children: 'Button',
   },
 }
