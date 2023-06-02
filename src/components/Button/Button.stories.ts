@@ -19,20 +19,17 @@ export const Primary: Story = {
   // More on args: https://storybook.js.org/docs/react/writing-stories/args
   args: {
     variant: 'contained',
-    children: 'Button',
   },
 }
 
 export const Outlined: Story = {
   args: {
     variant: 'outlined',
-    children: 'Button',
   },
 }
 export const Text: Story = {
   args: {
     variant: 'text',
-    children: 'Button',
   },
 }
 
@@ -40,20 +37,31 @@ export const Large: Story = {
   args: {
     size: 'large',
     variant: 'contained',
-    children: 'Button',
   },
 }
 export const Medium: Story = {
   args: {
     size: 'medium',
     variant: 'contained',
-    children: 'Button',
   },
 }
 export const Small: Story = {
   args: {
     size: 'small',
     variant: 'contained',
-    children: 'Button',
+  },
+}
+
+export const Create: Story = {
+  args: {
+    size: 'small',
+    variant: 'create',
+  },
+}
+
+export const Save: Story = {
+  args: {
+    size: 'small',
+    variant: 'save',
   },
 }

@@ -1,6 +1,16 @@
 import React from 'react'
-import Button, { ButtonProps } from '@mui/material/Button'
+import Button, { ButtonProps as MuiBtnProps } from '@mui/material/Button'
 
-export const AuiButton = ({ children, ...props }: ButtonProps) => {
-  return <Button {...props}>{children}</Button>
+type ButtonBaseProps = Pick<MuiBtnProps, 'variant' | 'size' | 'color' | 'sx' | 'onClick'>
+export interface ButtonProps extends ButtonBaseProps {
+  label: string
+  className?: string
+}
+
+export const AuiButton = ({ label = 'Button', className, ...props }: ButtonProps) => {
+  return (
+    <Button className={className} {...props}>
+      {label}
+    </Button>
+  )
 }

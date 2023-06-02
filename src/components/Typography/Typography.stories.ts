@@ -94,43 +94,36 @@ type Story = StoryObj<typeof AuiTypography>
 export const Heading1: Story = {
   args: {
     variant: 'h1',
-    children: 'Typography',
   },
 }
 export const Heading2: Story = {
   args: {
     variant: 'h2',
-    children: 'Typography',
   },
 }
 export const Heading3: Story = {
   args: {
     variant: 'h3',
-    children: 'Typography',
   },
 }
 export const Heading4: Story = {
   args: {
     variant: 'h4',
-    children: 'Typography',
   },
 }
 export const Heading5: Story = {
   args: {
     variant: 'h5',
-    children: 'Typography',
   },
 }
 
 export const Subtitle1: Story = {
   args: {
     variant: 'subtitle1',
-    children: 'Typography',
   },
 }
 export const Subtitle2: Story = {
   args: {
     variant: 'subtitle2',
-    children: 'Typography',
   },
 }

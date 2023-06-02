@@ -1,14 +1,41 @@
 //import { useAuthDetails } from '@context/AuthContext';
 import { createTheme } from '@mui/material/styles'
-// export const AuiTheme=()=>{
-//   const [color, setColor] = useState('#1976d2')
 
-//   return (
-//     <ThemeContext.Provider value={{ color, setColor }}>
-//       <ThemeProvider theme={theme}>{children}</ThemeProvider>
-//     </ThemeContext.Provider>
-//   )
+declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    save: true
+    start: true
+    create: true
+  }
+}
+import { PaletteColorOptions } from '@mui/material/styles'
+
+interface CustomBackgroundOptions extends PaletteColorOptions {
+  primary: string
+  secondary: string
+  kale: string
+  // Add more custom variants as needed
+}
+declare module '@mui/material/styles' {
+  interface Palette {
+    background: CustomBackgroundOptions
+  }
+
+  interface PaletteOptions {
+    background?: Partial<CustomBackgroundOptions>
+  }
+}
+
+// declare module '@mui/material/styles' {
+//   interface Palette {
+//     background: CustomBackgroundOptions;
 //   }
+
+//   interface PaletteOptions {
+//     background?: Partial<CustomBackgroundOptions>;
+//   }
+// }
+
 export const auiPalette = {
   black: {
     100: '#212121',
@@ -241,22 +268,22 @@ export const Auitheme = createTheme({
       main: auiPalette.green[400],
       contrastText: auiPalette.white[700], // white
     },
-    // background: {
-    //   primary: auiPalette.white[700],
-    //   secondary: auiPalette.grey[100],
-    //   default: auiPalette.grey[100], // Zendesk Garden grey 100
-    //   paper: auiPalette.white[700], // white
-    //   kale: auiPalette.main[200],
-    // },
+    background: {
+      primary: auiPalette.white[700],
+      secondary: auiPalette.grey[100],
+      default: auiPalette.grey[100], // Zendesk Garden grey 100
+      paper: auiPalette.white[700], // white
+      kale: auiPalette.main[200],
+    },
     text: {
       primary: auiPalette.grey[800], // Zendesk Garden grey 800
       secondary: auiPalette.grey[600], // Zendesk Garden grey 600
       disabled: auiPalette.grey[400], // Zendesk Garden grey 400
-    // hint: auiPalette.grey[400], // Zendesk Garden grey 400
+      // hint: auiPalette.grey[400], // Zendesk Garden grey 400
     },
-    // border: {
-    //   main: auiPalette.grey[300],
-    // },
+    border: {
+      main: auiPalette.grey[300],
+    },
     // bordercolor: {
     //   main: auiPalette.blue[500],
     // },
@@ -268,18 +295,18 @@ export const Auitheme = createTheme({
     //   text: auiPalette.white[100],
     //   background: auiPalette.black[100],
     // },
-    // card: {
-    //   main: {
-    //     border: auiPalette.grey[300],
-    //     background: auiPalette.white[700],
-    //     hover: {
-    //       background: auiPalette.main[200],
-    //       border: auiPalette.main[300],
-    //       buttonbackground: auiPalette.main[600],
-    //       buttontext: auiPalette.white[700],
-    //     },
-    //   },
-    // },
+    card: {
+      main: {
+        border: auiPalette.grey[300],
+        background: auiPalette.white[700],
+        hover: {
+          background: auiPalette.main[200],
+          border: auiPalette.main[300],
+          buttonbackground: auiPalette.main[600],
+          buttontext: auiPalette.white[700],
+        },
+      },
+    },
   },
   typography: {
     fontFamily: 'SF Pro, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif',
@@ -382,55 +409,54 @@ export const Auitheme = createTheme({
   components: {
     MuiButton: {
       variants: [
-        // {
-        //   props: { variant: 'save' },
-        //   style: {
-        //     fontSize: '0.875rem',
-        //     fontWeight: 500,
-        //     color: auiPalette.grey[100],
-        //     background: auiPalette.green[600],
-        //     textTransform: 'none',
-        //     borderRadius: 100,
-        //     '&:hover': {
-        //       background: auiPalette.green[500],
-        //       color: auiPalette.grey[300],
-
-        //       transition: '0.9s',
-        //     },
-        //   },
-        // },
-        // {
-        //   props: { variant: 'start' },
-        //   style: {
-        //     fontSize: '0.875rem',
-        //     fontWeight: 500,
-        //     color: auiPalette.grey[100],
-        //     background: auiPalette.kale[600],
-        //     textTransform: 'none',
-        //     borderRadius: 100,
-        //     '&:hover': {
-        //       background: auiPalette.kale[600],
-        //       color: auiPalette.grey[300],
-        //       transition: '0.5s',
-        //     },
-        //   },
-        // },
-        // {
-        //   props: { variant: 'create' },
-        //   style: {
-        //     fontSize: '0.875rem',
-        //     fontWeight: 500,
-        //     color: auiPalette.grey[100],
-        //     background: auiPalette.blue[600],
-        //     textTransform: 'none',
-        //     borderRadius: 100,
-        //     '&:hover': {
-        //       background: auiPalette.blue[500],
-        //       color: auiPalette.grey[300],
-        //       transition: '0.5s',
-        //     },
-        //   },
-        // },
+        {
+          props: { variant: 'save' },
+          style: {
+            fontSize: '0.875rem',
+            fontWeight: 500,
+            color: auiPalette.grey[100],
+            background: auiPalette.green[600],
+            textTransform: 'none',
+            transition: '0.9s',
+            borderRadius: 100,
+            '&:hover': {
+              background: auiPalette.green[500],
+              color: auiPalette.grey[300],
+            },
+          },
+        },
+        {
+          props: { variant: 'start' },
+          style: {
+            fontSize: '0.875rem',
+            fontWeight: 500,
+            color: auiPalette.grey[100],
+            background: auiPalette.kale[600],
+            textTransform: 'none',
+            borderRadius: 100,
+            '&:hover': {
+              background: auiPalette.kale[600],
+              color: auiPalette.grey[300],
+              transition: '0.5s',
+            },
+          },
+        },
+        {
+          props: { variant: 'create' },
+          style: {
+            fontSize: '0.875rem',
+            fontWeight: 500,
+            color: auiPalette.grey[100],
+            background: auiPalette.blue[600],
+            textTransform: 'none',
+            borderRadius: 100,
+            '&:hover': {
+              background: auiPalette.blue[500],
+              color: auiPalette.grey[300],
+              transition: '0.5s',
+            },
+          },
+        },
         {
           props: { variant: 'contained' },
           style: {
